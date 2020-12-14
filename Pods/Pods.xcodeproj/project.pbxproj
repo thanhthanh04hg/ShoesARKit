@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0385186A9F5E58219588BAB1464DE929 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D7F8E2AD475E413780FF08B7EBF04 /* ColorWheel.swift */; };
+		04E09193213C67BDCAE045413E612031 /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA8785A7BAE62E1B922049DA6EC92B /* SelectedColorView.swift */; };
+		2DECCFD00479EAEAEA069E67099460E9 /* SwiftHSVColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6721C433083F30996086A7583A4CE12 /* SwiftHSVColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34018830E4A928B47660FDDF9DF8423C /* SwiftHSVColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0C3D889038D7A1FF47DF6B939A9CAC /* SwiftHSVColorPicker-dummy.m */; };
+		7FB34D20949870888328308D5FC7FCD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		814E788BC701B813E5A1777C41A95842 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9033FF29F4745592C216796AB65BC59 /* ColorUtils.swift */; };
+		8330EDB6C91E6C295695C5E42CDB69FB /* Pods-MaterialAR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3760B5F9A7BC9EE3F916A500EE6E74 /* Pods-MaterialAR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		877D6FEFC343F81AB27C9987E73D81AC /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3324232EC69AD124AE035964D9B795 /* BrightnessView.swift */; };
+		AC1C1881EC16ACFB96FDF4493D321073 /* Pods-MaterialAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F855E4012B4E0787AC2A14CF1411CD16 /* Pods-MaterialAR-dummy.m */; };
+		B96C20DF568513DA692E83AE55C5D894 /* SwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDA3FBE55F976808056868FA221134 /* SwiftHSVColorPicker.swift */; };
+		BE5CDA41D1D6E5CCFB40B21E6F9C7356 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E7B3A2F79C6E69013FE2FCAC74CD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 331F67CA1C4A96D015734ACF27651ACC;
+			remoteInfo = SwiftHSVColorPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C3BADFF38C3DD0AA4526F79E0A002CF /* Pods-MaterialAR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialAR-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C7A4FD90FFA32E11AE45087AD505F22 /* Pods_MaterialAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MaterialAR.framework; path = "Pods-MaterialAR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37078A28900AECBDCFDF32463BFBB85A /* SwiftHSVColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHSVColorPicker.modulemap; sourceTree = "<group>"; };
+		5406D856E6C2BC2D742B635F86D249AD /* Pods-MaterialAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialAR.debug.xcconfig"; sourceTree = "<group>"; };
+		5D348562D15AAEB6E6E4EA485A66843A /* SwiftHSVColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHSVColorPicker.framework; path = SwiftHSVColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFD2A641356A9CC6084AF8399C41BC5 /* Pods-MaterialAR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialAR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		670ECA8CD4FF6E5D01B53A09AF2AEDB1 /* Pods-MaterialAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialAR.release.xcconfig"; sourceTree = "<group>"; };
+		69E80DFEDFEDF4A6B145687A5F130572 /* Pods-MaterialAR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialAR-Info.plist"; sourceTree = "<group>"; };
+		6B8AA2BEE92AFD992F16BB1E9EBAE7CD /* Pods-MaterialAR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialAR-frameworks.sh"; sourceTree = "<group>"; };
+		6EC7A16AD0F037C5E01F66AC1902903F /* Pods-MaterialAR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialAR.modulemap"; sourceTree = "<group>"; };
+		7197D25E2D35FA2EB295055A9191DED6 /* SwiftHSVColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftHSVColorPicker-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76AA8785A7BAE62E1B922049DA6EC92B /* SelectedColorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectedColorView.swift; path = Source/SelectedColorView.swift; sourceTree = "<group>"; };
+		792FC2CE33BF0DDDA2457451A596565D /* SwiftHSVColorPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHSVColorPicker.release.xcconfig; sourceTree = "<group>"; };
+		891D7F8E2AD475E413780FF08B7EBF04 /* ColorWheel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorWheel.swift; path = Source/ColorWheel.swift; sourceTree = "<group>"; };
+		9D0C3D889038D7A1FF47DF6B939A9CAC /* SwiftHSVColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHSVColorPicker-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A53BAB46C0A6982A18DBF45396C5C1BF /* SwiftHSVColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHSVColorPicker.debug.xcconfig; sourceTree = "<group>"; };
+		AB3760B5F9A7BC9EE3F916A500EE6E74 /* Pods-MaterialAR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialAR-umbrella.h"; sourceTree = "<group>"; };
+		B2FDA3FBE55F976808056868FA221134 /* SwiftHSVColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHSVColorPicker.swift; path = Source/SwiftHSVColorPicker.swift; sourceTree = "<group>"; };
+		B6721C433083F30996086A7583A4CE12 /* SwiftHSVColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHSVColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		BB3324232EC69AD124AE035964D9B795 /* BrightnessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightnessView.swift; path = Source/BrightnessView.swift; sourceTree = "<group>"; };
+		C9033FF29F4745592C216796AB65BC59 /* ColorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = Source/ColorUtils.swift; sourceTree = "<group>"; };
+		EF5C34531382D5FF8A202D4C59D3F82A /* SwiftHSVColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHSVColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		F855E4012B4E0787AC2A14CF1411CD16 /* Pods-MaterialAR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialAR-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169A2C973048C6CC9EAD53D83C40D1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5CDA41D1D6E5CCFB40B21E6F9C7356 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE19130F3FCBDA26C13D65F3810E7755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB34D20949870888328308D5FC7FCD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04993B6DE6D8C835CE41B874B4F0B2A7 /* SwiftHSVColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BB3324232EC69AD124AE035964D9B795 /* BrightnessView.swift */,
+				C9033FF29F4745592C216796AB65BC59 /* ColorUtils.swift */,
+				891D7F8E2AD475E413780FF08B7EBF04 /* ColorWheel.swift */,
+				76AA8785A7BAE62E1B922049DA6EC92B /* SelectedColorView.swift */,
+				B2FDA3FBE55F976808056868FA221134 /* SwiftHSVColorPicker.swift */,
+				22561AE4C4CFF9D6BBD844E55AEBB6A5 /* Support Files */,
+			);
+			name = SwiftHSVColorPicker;
+			path = SwiftHSVColorPicker;
+			sourceTree = "<group>";
+		};
+		22561AE4C4CFF9D6BBD844E55AEBB6A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37078A28900AECBDCFDF32463BFBB85A /* SwiftHSVColorPicker.modulemap */,
+				9D0C3D889038D7A1FF47DF6B939A9CAC /* SwiftHSVColorPicker-dummy.m */,
+				7197D25E2D35FA2EB295055A9191DED6 /* SwiftHSVColorPicker-Info.plist */,
+				EF5C34531382D5FF8A202D4C59D3F82A /* SwiftHSVColorPicker-prefix.pch */,
+				B6721C433083F30996086A7583A4CE12 /* SwiftHSVColorPicker-umbrella.h */,
+				A53BAB46C0A6982A18DBF45396C5C1BF /* SwiftHSVColorPicker.debug.xcconfig */,
+				792FC2CE33BF0DDDA2457451A596565D /* SwiftHSVColorPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHSVColorPicker";
+			sourceTree = "<group>";
+		};
+		4DA2E716ECA7DE09452CDAEA48387DE0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51C02C2BB73EB0C15EE2C608AF387DAB /* Pods-MaterialAR */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		51C02C2BB73EB0C15EE2C608AF387DAB /* Pods-MaterialAR */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7A16AD0F037C5E01F66AC1902903F /* Pods-MaterialAR.modulemap */,
+				5FFD2A641356A9CC6084AF8399C41BC5 /* Pods-MaterialAR-acknowledgements.markdown */,
+				1C3BADFF38C3DD0AA4526F79E0A002CF /* Pods-MaterialAR-acknowledgements.plist */,
+				F855E4012B4E0787AC2A14CF1411CD16 /* Pods-MaterialAR-dummy.m */,
+				6B8AA2BEE92AFD992F16BB1E9EBAE7CD /* Pods-MaterialAR-frameworks.sh */,
+				69E80DFEDFEDF4A6B145687A5F130572 /* Pods-MaterialAR-Info.plist */,
+				AB3760B5F9A7BC9EE3F916A500EE6E74 /* Pods-MaterialAR-umbrella.h */,
+				5406D856E6C2BC2D742B635F86D249AD /* Pods-MaterialAR.debug.xcconfig */,
+				670ECA8CD4FF6E5D01B53A09AF2AEDB1 /* Pods-MaterialAR.release.xcconfig */,
+			);
+			name = "Pods-MaterialAR";
+			path = "Target Support Files/Pods-MaterialAR";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7E93B90E5E5AB661246BDF76B495FFE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04993B6DE6D8C835CE41B874B4F0B2A7 /* SwiftHSVColorPicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		817009B8BB76FB23DF283518B243DDAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C7A4FD90FFA32E11AE45087AD505F22 /* Pods_MaterialAR.framework */,
+				5D348562D15AAEB6E6E4EA485A66843A /* SwiftHSVColorPicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7E93B90E5E5AB661246BDF76B495FFE5 /* Pods */,
+				817009B8BB76FB23DF283518B243DDAB /* Products */,
+				4DA2E716ECA7DE09452CDAEA48387DE0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EE3E527DB84BEF64F633E5CBF3AC320 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8330EDB6C91E6C295695C5E42CDB69FB /* Pods-MaterialAR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBF4A32B0DFF85BB8450EA7F38F0702 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DECCFD00479EAEAEA069E67099460E9 /* SwiftHSVColorPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		331F67CA1C4A96D015734ACF27651ACC /* SwiftHSVColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE558DE71DE84CF3981336FB61D41D6 /* Build configuration list for PBXNativeTarget "SwiftHSVColorPicker" */;
+			buildPhases = (
+				ADBF4A32B0DFF85BB8450EA7F38F0702 /* Headers */,
+				701C7B4201A0F4026A9F6222CF7F6EC0 /* Sources */,
+				EE19130F3FCBDA26C13D65F3810E7755 /* Frameworks */,
+				872FE78631D6476F435EB2DD237FE03A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHSVColorPicker;
+			productName = SwiftHSVColorPicker;
+			productReference = 5D348562D15AAEB6E6E4EA485A66843A /* SwiftHSVColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6BEAA760790676524E53777B6CE19F1 /* Pods-MaterialAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380DE2D15CB886EFCDC439AD4C379C55 /* Build configuration list for PBXNativeTarget "Pods-MaterialAR" */;
+			buildPhases = (
+				4EE3E527DB84BEF64F633E5CBF3AC320 /* Headers */,
+				E0073ABC96D29361B7DA4B842C490EE2 /* Sources */,
+				169A2C973048C6CC9EAD53D83C40D1A9 /* Frameworks */,
+				AF807B5E7A740F7F509A0E10724877D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				887DC3C88FC9C59945DBEE50808A123D /* PBXTargetDependency */,
+			);
+			name = "Pods-MaterialAR";
+			productName = "Pods-MaterialAR";
+			productReference = 1C7A4FD90FFA32E11AE45087AD505F22 /* Pods_MaterialAR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 817009B8BB76FB23DF283518B243DDAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6BEAA760790676524E53777B6CE19F1 /* Pods-MaterialAR */,
+				331F67CA1C4A96D015734ACF27651ACC /* SwiftHSVColorPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		872FE78631D6476F435EB2DD237FE03A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF807B5E7A740F7F509A0E10724877D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		701C7B4201A0F4026A9F6222CF7F6EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877D6FEFC343F81AB27C9987E73D81AC /* BrightnessView.swift in Sources */,
+				814E788BC701B813E5A1777C41A95842 /* ColorUtils.swift in Sources */,
+				0385186A9F5E58219588BAB1464DE929 /* ColorWheel.swift in Sources */,
+				04E09193213C67BDCAE045413E612031 /* SelectedColorView.swift in Sources */,
+				34018830E4A928B47660FDDF9DF8423C /* SwiftHSVColorPicker-dummy.m in Sources */,
+				B96C20DF568513DA692E83AE55C5D894 /* SwiftHSVColorPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0073ABC96D29361B7DA4B842C490EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1C1881EC16ACFB96FDF4493D321073 /* Pods-MaterialAR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		887DC3C88FC9C59945DBEE50808A123D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHSVColorPicker;
+			target = 331F67CA1C4A96D015734ACF27651ACC /* SwiftHSVColorPicker */;
+			targetProxy = 78E7B3A2F79C6E69013FE2FCAC74CD5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2214E2AC840E80CDF45B211FC5B71E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53BAB46C0A6982A18DBF45396C5C1BF /* SwiftHSVColorPicker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHSVColorPicker;
+				PRODUCT_NAME = SwiftHSVColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		727660CB375A7CA87810FB5E8B09EC96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670ECA8CD4FF6E5D01B53A09AF2AEDB1 /* Pods-MaterialAR.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialAR/Pods-MaterialAR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialAR/Pods-MaterialAR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D9834B4C40A1D27D612DB3E8547B9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792FC2CE33BF0DDDA2457451A596565D /* SwiftHSVColorPicker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHSVColorPicker;
+				PRODUCT_NAME = SwiftHSVColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		900F2818E5F1A0BFA96E178D0AD4FE88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5406D856E6C2BC2D742B635F86D249AD /* Pods-MaterialAR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialAR/Pods-MaterialAR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialAR/Pods-MaterialAR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380DE2D15CB886EFCDC439AD4C379C55 /* Build configuration list for PBXNativeTarget "Pods-MaterialAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900F2818E5F1A0BFA96E178D0AD4FE88 /* Debug */,
+				727660CB375A7CA87810FB5E8B09EC96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE558DE71DE84CF3981336FB61D41D6 /* Build configuration list for PBXNativeTarget "SwiftHSVColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2214E2AC840E80CDF45B211FC5B71E45 /* Debug */,
+				7D9834B4C40A1D27D612DB3E8547B9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

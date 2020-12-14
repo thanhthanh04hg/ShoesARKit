@@ -8,22 +8,28 @@
 import UIKit
 import ARKit
 import SceneKit
+import SwiftHSVColorPicker
 
 class ViewController: UIViewController ,UICollectionViewDelegate  {
+    weak var delegate : Delegate?
     var shoesNode = SCNReferenceNode()
-    let materialAround = SCNMaterial()
-    let material = SCNMaterial()
+    let material1 = SCNMaterial()
+    let material2 = SCNMaterial()
     let material3 = SCNMaterial()
+    let materialThread = SCNMaterial()
     var str : String = ""
-    var nodeList : [String] = ["Node1" , "Node2" , "Node3","Thread","Color"]
+//    var colorStr = UserDefaults.standard.object(forKey: "color") as! String
+
+    var nodeList : [String] = ["Node1" , "Node2" , "Node3","Thread"]
     @IBOutlet var collView: UICollectionView!
     @IBOutlet var sceneView: ARSCNView!
-    
-    
+    var node1Color : String = ""
+    var node2Color : String = ""
+    var node3Color : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpAllForView()
-        print(str)
+        
     }
     // MARK: Display screen
     
@@ -36,6 +42,17 @@ class ViewController: UIViewController ,UICollectionViewDelegate  {
     fileprivate func setUpAllForView(){
         setUpShoesNode()
         setUpCollectionView()
+        if(UserDefaults.standard.string(forKey: "Node1") == nil){
+            UserDefaults.standard.set("Thanh", forKey: "Node1")
+        }
+        if(UserDefaults.standard.string(forKey: "Node2") == nil){
+            UserDefaults.standard.set("Thanh", forKey: "Node2")
+        }
+        if(UserDefaults.standard.string(forKey: "Node3") == nil){
+            UserDefaults.standard.set("Thanh", forKey: "Node3")
+        }
+
+        
     }
     //MARK: register collection view
     fileprivate func setUpCollectionView(){
@@ -57,7 +74,6 @@ class ViewController: UIViewController ,UICollectionViewDelegate  {
     }
     //MARK: set up shoes node
     fileprivate func setUpShoesNode(){
-        let scene = SCNScene()
         let urlModelShoes = Bundle.main.url(forResource: "vans_old.usdz", withExtension: nil)!
         let content = SCNReferenceNode(url: urlModelShoes)
         self.shoesNode = content!
@@ -72,12 +88,11 @@ class ViewController: UIViewController ,UICollectionViewDelegate  {
         
         //MARK: set material for node
         
-//        materialAround.diffuse.contents = UIImage(named: "img_forest.jpg")
-//
-//        material3.diffuse.contents = UIColor.systemPink
-//
-//        material.diffuse.contents = UIColor.cyan
-        
+        material1.diffuse.contents = convertColorFromString(string: UserDefaults.standard.string(forKey: "Node1")!)
+        material2.diffuse.contents = convertColorFromString(string: UserDefaults.standard.string(forKey: "Node2")!)
+        material3.diffuse.contents = convertColorFromString(string: UserDefaults.standard.string(forKey: "Node3")!)
+        materialThread.diffuse.contents = convertColorFromString(string: UserDefaults.standard.string(forKey: "Thread")!)
+        devideNode()
         
         self.shoesNode.position = .init(0, 0, -0.2)
         sceneView.scene.rootNode.addChildNode(shoesNode)
@@ -86,29 +101,42 @@ class ViewController: UIViewController ,UICollectionViewDelegate  {
         //MARK: devide node
         let shoesMaterials = shoesNode.childNodes.map( {(node) -> () in
             
-//            print(node)
+            print(node)
             let geom1 = node.childNodes.map({(node2) -> () in
-//                print(node2)
+                print(node2)
                 let van_old = node2.childNodes.map({(node3) -> () in
-//                    print(node3)
+                    print(node3)
                     let geom2 = node3.childNodes.map({ (node4) -> () in
-//                        print(node4)
-                        let geomChild = node4.childNodes.map({ (node5) -> () in
-                            if(node5.name == str){
-                                node5.geometry?.materials = [material]
-//                                print("1")
-                            }
-//                            if(node5.name == "Node2"){
-//                                node5.geometry?.materials = [materialAround]
-//                                print(2)
-//                            }
+                            
+                        if(node4.name == "Node1"){
+                            node4.geometry?.materials = [material1]
+                        }
+                        if(node4.name == "Node2"){
+                            node4.geometry?.materials = [material2]
+                        }
+                        if(node4.name == "Node3" ){
+                            node4.geometry?.materials = [material3]
+                        }
+                        if(node4.name == "Thread"){
+                            node4.geometry?.materials = [materialThread]
+                        }
+                            
+                                
 
-                        })
+                        
                     })
                 })
             })
-                           
         })
+    }
+    func convertColorFromString(string: String) -> UIColor {
+        let arr = string.components(separatedBy: " ")
+        if(arr.count == 4){
+            return UIColor(red: CGFloat((arr[0] as NSString).floatValue), green: CGFloat((arr[1] as NSString).floatValue), blue: CGFloat((arr[2] as NSString).floatValue), alpha: CGFloat((arr[3] as NSString).floatValue))
+        }
+        else {
+            return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
     }
 
 }
@@ -116,7 +144,7 @@ class ViewController: UIViewController ,UICollectionViewDelegate  {
 //MARK: process Collection View Cell
 extension ViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -130,21 +158,31 @@ extension ViewController : UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if(indexPath.section == 0){
-            material.diffuse.contents = UIColor.cyan
+            let sb = UIStoryboard.init(name: "Main", bundle: nil)
+            let selectColorView = sb.instantiateViewController(withIdentifier: "SelectColorViewController") as! SelectColorViewController
+            self.delegate = selectColorView
             switch indexPath.item {
             case 0:
-                
                 str = "Node1"
-                devideNode()
+                delegate?.passStringColor("Node1")
+                self.present(selectColorView,animated: true)
+                print(UserDefaults.standard.string(forKey: "Node1")!)
             case 1:
                 str = "Node2"
-                devideNode()
+                delegate?.passStringColor("Node2")
+                self.present(selectColorView,animated: true)
+                print(UserDefaults.standard.string(forKey: "Node2")!)
             case 2:
                 str = "Node3"
-                devideNode()
+                delegate?.passStringColor("Node3")
+                self.present(selectColorView,animated: true)
+                print(UserDefaults.standard.string(forKey: "Node3")!)
             case 3:
                 str = "Thread"
-                devideNode()
+                delegate?.passStringColor("Thread")
+                self.present(selectColorView,animated: true)
+                print(UserDefaults.standard.string(forKey: "Thread")!)
+                
             default:
                 print("Default")
             }
